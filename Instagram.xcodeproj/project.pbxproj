@@ -29,6 +29,9 @@
 		9E66D53826C423D60002D00A /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66D53726C423D60002D00A /* PostEditorViewController.swift */; };
 		9E66D53A26C423E80002D00A /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66D53926C423E80002D00A /* PublishPostViewController.swift */; };
 		9E66D53C26C4307A0002D00A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E66D53B26C4307A0002D00A /* GoogleService-Info.plist */; };
+		9E66D54026C43A860002D00A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66D53F26C43A860002D00A /* DatabaseManager.swift */; };
+		9E66D54226C43BB00002D00A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66D54126C43BB00002D00A /* AuthManager.swift */; };
+		9E66D54426C43C200002D00A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66D54326C43C200002D00A /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		9E66D53726C423D60002D00A /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		9E66D53926C423E80002D00A /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		9E66D53B26C4307A0002D00A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E66D53F26C43A860002D00A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		9E66D54126C43BB00002D00A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		9E66D54326C43C200002D00A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +139,10 @@
 			children = (
 				9E66D53B26C4307A0002D00A /* GoogleService-Info.plist */,
 				9E66D50326C420300002D00A /* AppDelegate.swift */,
+				9E66D54326C43C200002D00A /* StorageManager.swift */,
 				9E66D50526C420300002D00A /* SceneDelegate.swift */,
+				9E66D53F26C43A860002D00A /* DatabaseManager.swift */,
+				9E66D54126C43BB00002D00A /* AuthManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -170,14 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				9E66D52626C422D70002D00A /* Onboarding */,
-				9E66D52B26C423340002D00A /* PostViewController.swift */,
-				9E66D52D26C423470002D00A /* EditProfileViewController.swift */,
-				9E66D52F26C423520002D00A /* SettingsViewController.swift */,
-				9E66D53126C423750002D00A /* ListViewController.swift */,
-				9E66D53326C423930002D00A /* SearchViewController.swift */,
-				9E66D53526C4239C0002D00A /* SearchResultViewController.swift */,
-				9E66D53726C423D60002D00A /* PostEditorViewController.swift */,
-				9E66D53926C423E80002D00A /* PublishPostViewController.swift */,
+				9E66D53E26C4366A0002D00A /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -189,6 +191,21 @@
 				9E66D52926C422FE0002D00A /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9E66D53E26C4366A0002D00A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				9E66D52B26C423340002D00A /* PostViewController.swift */,
+				9E66D52D26C423470002D00A /* EditProfileViewController.swift */,
+				9E66D52F26C423520002D00A /* SettingsViewController.swift */,
+				9E66D53126C423750002D00A /* ListViewController.swift */,
+				9E66D53326C423930002D00A /* SearchViewController.swift */,
+				9E66D53526C4239C0002D00A /* SearchResultViewController.swift */,
+				9E66D53726C423D60002D00A /* PostEditorViewController.swift */,
+				9E66D53926C423E80002D00A /* PublishPostViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		D94A0EB5CBE8A72BE0158F02 /* Pods */ = {
@@ -322,12 +339,15 @@
 				9E66D52126C422450002D00A /* NotificationViewController.swift in Sources */,
 				9E66D52A26C422FE0002D00A /* RegistrationViewController.swift in Sources */,
 				9E66D53826C423D60002D00A /* PostEditorViewController.swift in Sources */,
+				9E66D54426C43C200002D00A /* StorageManager.swift in Sources */,
 				9E66D52C26C423340002D00A /* PostViewController.swift in Sources */,
+				9E66D54026C43A860002D00A /* DatabaseManager.swift in Sources */,
 				9E66D50426C420300002D00A /* AppDelegate.swift in Sources */,
 				9E66D53626C4239C0002D00A /* SearchResultViewController.swift in Sources */,
 				9E66D52826C422E70002D00A /* LoginViewController.swift in Sources */,
 				9E66D53426C423930002D00A /* SearchViewController.swift in Sources */,
 				9E66D52326C422530002D00A /* ProfileViewController.swift in Sources */,
+				9E66D54226C43BB00002D00A /* AuthManager.swift in Sources */,
 				9E66D50626C420300002D00A /* SceneDelegate.swift in Sources */,
 				9E66D51D26C422090002D00A /* ExplorerViewController.swift in Sources */,
 				9E66D53226C423750002D00A /* ListViewController.swift in Sources */,
